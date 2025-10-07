@@ -1,12 +1,11 @@
 package model;
 
-import java.io.Serial;
 import java.io.Serializable;
 import java.time.MonthDay;
 
 public class Visita implements Serializable{
 	
-	@Serial private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 	
 	private String idVisita;
 	private MonthDay data;
@@ -19,6 +18,10 @@ public class Visita implements Serializable{
 		this.nickVolontario = nick;
 		this.stato = stato;
 	}
+
+	public String getIdVisita() {
+		return idVisita;
+	}
 	
 	public StatoVisita getState() { 
     	return stato; 
@@ -29,7 +32,7 @@ public class Visita implements Serializable{
     }
     
     @Override public String toString() { 
-    	return data + " – id= " + idVisita + " – volontario= " + nickVolontario + " – " + stato; 
+    	return data + " id: " + idVisita + " volontario: " + nickVolontario + "  " + stato; 
     }
 
 }
