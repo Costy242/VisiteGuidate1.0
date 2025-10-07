@@ -16,9 +16,18 @@ public class Luogo implements Serializable{
 		this.infoAggiuntive = info; 	//opzionale
 		this.collocazione = pos;
 	}
+
+	public Luogo(String desc, String pos) {
+		this.descrizione = desc; 		//lo individua univocamente
+		this.collocazione = pos;
+	}
 	
 	public static Luogo crea(String desc, String info, String pos) {
 		return new Luogo(desc, info, pos);
+	}
+
+	public static Luogo crea(String desc, String pos) {
+		return new Luogo(desc, pos);
 	}
 
 	public String getDescrizione() {
