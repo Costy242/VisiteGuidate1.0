@@ -1,12 +1,11 @@
 package model;
 
-import java.io.Serial;
 import java.io.Serializable;
 import java.time.MonthDay;
 
 public class Visita implements Serializable{
 	
-	@Serial private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 	
 	private String idVisita;
 	private MonthDay data;

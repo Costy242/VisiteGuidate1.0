@@ -1,6 +1,5 @@
 package model;
 
-import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalTime;
 import java.time.MonthDay;
@@ -11,7 +10,7 @@ import java.util.Set;
 
 public class TipoVisita implements Serializable{
 	
-	@Serial private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 	
 	private String id;		//individua la visita univocamente
 	private String luogo;
